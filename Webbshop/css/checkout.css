@@ -1,0 +1,42 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+#items {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 7vw;
+  padding: 1vw;
+  background-color: lightcyan;
+  border-radius: 15px;
+}
+
+.item > * {
+  margin: 2px;
+}
+
+.item > img {
+  height: 6vw;
+  border: 3px solid gray;
+  border-radius: 5px;
+}
+
+.item-name {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.item-desc {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
