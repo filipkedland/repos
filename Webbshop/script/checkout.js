@@ -3,13 +3,18 @@ let cartList = document.getElementById("cart-list");
 let total = document.getElementById("total-text");
 let counter = document.getElementById("cart-size");
 
-document.getElementById("clear").addEventListener("click", function() {
+function clearCart() {
   localStorage.removeItem("cart");
   window.location.href= "index.html";
+}
+
+document.getElementById("clear").addEventListener("click", function() {
+  clearCart();
 });
 
 document.getElementById("pay").addEventListener("click", function() {
   alert("BETALNING LYCKAD!!");
+  clearCart();
 });
 
 document.getElementById("apply").addEventListener("click", function() {
