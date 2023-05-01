@@ -40,6 +40,7 @@ function listItems() {
 
     let button = document.createElement("BUTTON");
     button.className = "item-button";
+    button.type = "button";
     button.innerHTML = "Lägg till i varukorg";
     button.addEventListener("click", () => { addToCart(i); });
     
