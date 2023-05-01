@@ -5,16 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
   <title>Webbshop</title>
 </head>
 <body>
   <div class="layout">
     <header>
-      <h1>Affär</h1>
+      <h1>Filips Second Hand-Butik</h1>
+      <div class="checkout-button">
+        <img class="checkout-button-img" src="./img/cart.png" alt="Cart" onclick="window.location.href='checkout.html'">
+        <span class="counter">
+          <p id="cart-size">0</p>
+        </span>
+      </div>
+      
     </header>
-    <button id="checkout-button" onclick="window.location.href='checkout.html'">Checkout</button>
+    <nav>
+      <a href="https://adamtroberg.github.io/repos/">Om oss</a>
+      <a href="https://loremipsum.io">Returpolicy</a>
+      <a href="https://www.google.com/maps/@-69.0067472,39.578125,3a,75y,46.71h,68.44t/data=!3m8!1e1!3m6!1sAF1QipPUm5h9-zt2B7qn29miccmL6GtDWaWhZ70xJGw!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPUm5h9-zt2B7qn29miccmL6GtDWaWhZ70xJGw%3Dw203-h100-k-no-pi-0-ya176.5-ro0-fo100!7i5376!8i2688">Hitta hit</a>
+    </nav>
     <div id="items"></div>
+    <footer>
+      <p>Kontakta oss: <a href="mailto:support@filip.se">support@filip.se</a></p>
+    </footer>
   </div>
-  <script src="./script/main.js" type="module"></script>
+  <script src="./script/main.js" type="text/javascript"></script>
 </body>
 </html>
